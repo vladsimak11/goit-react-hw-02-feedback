@@ -1,5 +1,3 @@
-import { Children } from "react"
-
 export const Section = ({title, children}) => {
   return (
     <>
