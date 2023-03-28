@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import css from './App.module.css';
 import {Statistics} from './Statistics/Statistics';
 import {FeedbackOptions} from './FeedbackOptions/FeedbackOptions';
-import {Section} from './Section/Section'
+import {Section} from './Section/Section';
 
 let total = 0;
 let positivePercentage = 0;
@@ -18,7 +18,6 @@ export class App extends Component {
 
   handleClick = (value) => {
     value = value.toLowerCase();
-    console.log(value);
     this.setState((prevState)=> {
       return {
         [value]: prevState[value] + 1,
@@ -72,8 +71,4 @@ export class App extends Component {
     )
   }
 }
-
-
-
-
 
